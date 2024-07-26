@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">ToDo</string>
+    <string name="login">Anmelden</string>
+
+    <string name="email">Email</string>
+    <string name="password">Passwort</string>
+    <string name="register">Registrieren</string>
+
+    <string name="click_to_login">Tippe zum anmelden</string>
+    <string name="click_to_register">Tippe zum registrieren</string>
+
+    <string name="logout">Abmelden</string>
+    <string name="language">Sprache</string>
+    <string name="notifications">Benachrichtigung</string>
+    <string name="change_password">Passwort ändern</string>
+    <string name="edit_profile">Profil bearbeiten</string>
+    <string name="dark_mode">Dunkler Modus</string>
+    <string name="edit_personal_details">Edit personal details</string>
+    <string name="user_name">Name</string>
+    <string name="profile_picture">Profil Bild</string>
+    <string name="settings">Einstellungen</string>
+    <string name="back_button">Zurück Knopf</string>
+    <string name="tasks">Aufgaben</string>
+    <string name="name">Name</string>
+
+    <string name="logout_message">Bist du sicher, dass du dich abmelden möchtest?</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="language_message">Sprache auswählen</string>
+
+    <string name="enter_email">Email fehlt</string>
+    <string name="enter_password">Password fehlt</string>
+    <string name="enter_name">Name fehlt</string>
+
+    <string name="login_successful">Anmeldung erfolgreich</string>
+    <string name="authentication_failed">Authentifizierung fehlgeschlagen</string>
+
+    <string name="account_created">Account erstellt</string>
+    <string name="profile_updated">Profil aktualisiert</string>
+
+    <string name="delete_task">Aufgabe löschen</string>
+    <string name="delete_task_message">Bist du sicher, dass du diese Aufgabe löschen möchten?</string>
+
+    <string name="Confirm">Bestätigen</string>
+    <string name="save">Speichern</string>
+    <string name="new_task">Neue Aufgabe</string>
+
+    <string name="edit_display_name_hint">Neuer Name</string>
+    <string name="new_password_hint">Neues Passwort</string>
+
+</resources>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".Settings">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settings"
+        android:textSize="32sp"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        />
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="22dp"
+        android:background="@null"
+        android:src="@drawable/ic_baseline_arrow_back_ios_new"
+        app:tint="@color/iconColor"
+        android:layout_alignParentStart="true"
+        android:contentDescription="@string/back_button" />
+
+    <RelativeLayout
+        android:id="@+id/userProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:background="@null">
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_baseline_account_circle"
+            app:tint="@color/iconColor"
+            android:layout_alignParentStart="true"
+            android:contentDescription="@string/profile_picture" />
+
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/profile_image"
+            android:layout_marginStart="16dp"
+            android:text="@string/user_name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/textColor"
+            />
+
+        <TextView
+            android:id="@+id/profile_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_name"
+            android:layout_toEndOf="@id/profile_image"
+            android:layout_marginStart="16dp"
+            android:text="@string/edit_personal_details"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/userProfile"
+        android:layout_marginTop="24dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="@string/dark_mode"
+                android:src="@drawable/ic_baseline_dark_mode"
+                app:tint="@color/iconColor"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:text="@string/dark_mode"
+                android:textSize="16sp"
+                android:textColor="@color/textColor"
+                />
+
+            <Switch
+                android:id="@+id/dark_mode_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/edit_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_baseline_edit"
+                android:layout_alignParentStart="true"
+                android:contentDescription="@string/edit_profile"
+                app:tint="@color/iconColor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:text="@string/edit_profile"
+                android:textColor="@color/textColor"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/change_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_baseline_password"
+                app:tint="@color/iconColor"
+                android:layout_alignParentStart="true"
+                android:contentDescription="@string/change_password" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:text="@string/change_password"
+                android:textSize="16sp"
+                android:textColor="@color/textColor"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_baseline_notifications"
+                app:tint="@color/iconColor"
+                android:layout_alignParentStart="true"
+                android:contentDescription="@string/notifications" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:text="@string/notifications"
+                android:textSize="16sp"
+                android:textColor="@color/textColor"
+                />
+
+            <Switch
+                android:id="@+id/notifications_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/language_option"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_baseline_language"
+                app:tint="@color/iconColor"
+                android:layout_alignParentStart="true"
+                android:contentDescription="@string/language" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:text="@string/language"
+                android:textSize="16sp"
+                android:textColor="@color/textColor"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/logout_option"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_baseline_logout"
+                app:tint="@color/iconColor"
+                android:layout_alignParentStart="true"
+                android:contentDescription="@string/logout" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:text="@string/logout"
+                android:textSize="16sp"
+                android:textColor="@color/textColor"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
